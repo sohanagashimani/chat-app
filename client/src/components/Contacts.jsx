@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 import "./contacts.css";
-import { Link } from "react-router-dom";
 
 const Contacts = ({ contacts, changeChat }) => {
   const [currentUserName, setCurrentUserName] = useState(undefined);
@@ -33,6 +32,7 @@ const Contacts = ({ contacts, changeChat }) => {
           <div className="contacts">
             {contacts?.map((contact, index) => {
               return (
+                <>
                 <div
                   key={contact._id}
                   className={`contact ${
@@ -50,6 +50,9 @@ const Contacts = ({ contacts, changeChat }) => {
                     <h3>{contact.username}</h3>
                   </div>
                 </div>
+                  <hr />
+                </>
+
               );
             })}
           </div>

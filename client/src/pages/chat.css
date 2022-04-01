@@ -6,12 +6,12 @@
     justify-content: center;
     gap: 1rem;
     align-items: center;
-    background-color: #131324;
+    background-color: #0a2e36;
 }
 .chatContainer {
     height: 85vh;
     width: 85vw;
-    background-color: #00000076;
+    background-color: #e6fafc;
     display: grid;
     grid-template-columns: 25% 75%;
 }

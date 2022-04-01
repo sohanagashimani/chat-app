@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: 10% 75% 15%;
   overflow: hidden;
-  background-color: #080420;
+  background-color: #a0eade;
 }
 .container2 .brand {
   display: flex;
@@ -14,7 +14,7 @@
   height: 2rem;
 }
 .brand h3 {
-  color: white;
+  color: black;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -25,16 +25,14 @@
   overflow: auto;
   gap: 0.8rem;
 }
-.contacts ::-webkit-scrollbar {
-  width: 0.2rem;
-}
-.contacts-thumb {
-  background-color: #ffffff39;
-  width: 0.1rem;
-  border-radius: 1rem;
+
+.contacts hr{
+  width: 86%;
+  text-align: center;
+  opacity: .5;
 }
 .contacts .contact {
-  background-color: #ffffff34;
+  background-color: #a0eade;
   min-height: 5rem;
   cursor: pointer;
   width: 90%;
@@ -49,23 +47,22 @@
   height: 3rem;
 }
 .contacts .contact h3 {
-  color: white;
-}
-.selected {
-  background-color: #9a86f3;
+  color: black;
 }
 
+
 .current-user {
-  background-color: #0d0d30;
+  background-color: #48cae4;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  /* text-align: left; */
 }
 .current-user .avatar img {
   height: 4rem;
   max-inline-size: 100%;
 }
 .current-user .username h2 {
-  color: white;
+  color: black;
 }

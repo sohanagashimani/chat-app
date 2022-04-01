@@ -6,7 +6,7 @@
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  background-color: #1b2f33;
 }
 .brand {
   display: flex;
@@ -18,34 +18,35 @@ img {
   height: 5rem;
 }
 h1 {
-  color: white;
+  color: black;
   text-transform: uppercase;
 }
 .formContainer form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background-color: #00000076;
+  background-color: #e6fafc;
   border-radius: 2rem;
   padding: 3rem 5rem;
 }
 .formContainer input {
   background-color: transparent;
   padding: 1rem;
-  border: 0.1rem solid #4e0eff;
+  border: 0.1rem solid #48cae4;
   border-radius: 0.4rem;
-  color: white;
+  color: black;
   width: 100%;
+  outline: none;
   font-size: 1rem;
 }
 .formContainer input:hover {
-  border: 0.1rem solid #997af0;
+  border: 0.1rem solid #00b4d8;
   outline: none;
 }
 
 .formContainer button {
-  background-color: #4e0eff;
-  color: white;
+  background-color: #48cae4;
+  color: black;
   padding: 1rem 2rem;
   border: none;
   font-weight: bold;
@@ -56,11 +57,11 @@ h1 {
 }
 
 .formContainer span {
-  color: white;
+  color: black;
   text-transform: uppercase;
 }
 .formContainer span a {
-  color: #4e0eff;
+  color: #48cae4;
   text-decoration: none;
   font-weight: bold;
 }

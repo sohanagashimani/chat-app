@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   flex-direction: column;
 }
 .welcomeContainer img {
   height: 20rem;
 }
 .welcomeContainer span {
-  color: #4e0eff;
+  color: #00b4d8;
 }

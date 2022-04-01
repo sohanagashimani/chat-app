@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   gap: 3rem;
-  background-color: #131324;
+  background-color: #0a2e36;
   height: 100vh;
   width: 100vw;
 }
@@ -33,8 +33,8 @@
   height: 6rem;
   transition: 0.5s ease-in-out;
 }
-.selected {
-  border: 0.4rem solid #4e0eff;
+.avtars .selected {
+  border: 0.4rem solid #0077b6;
 }
 .submit-btn {
   background-color: #4e0eff;

@@ -9,7 +9,7 @@ import { setAvatarRoute } from "../utils/APIRoutes";
 import "./setAvtar.css";
 
 const SetAvtar = () => {
-  const api = `https://api.multiavatar.com/4645646`;
+  const api = `https://api.multiavatar.com/465846`;
   const navigate = useNavigate();
   const [avatars, setAvatars] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +21,7 @@ const SetAvtar = () => {
     draggable: true,
     theme: "dark",
   };
-  useEffect( () => {
+  useEffect(() => {
     if (!localStorage.getItem("chat-app-user")) navigate("/login");
   }, []);
   const setProfilePicture = async () => {
@@ -32,7 +32,8 @@ const SetAvtar = () => {
       const { data } = await axios.post(`${setAvatarRoute}/${user._id}`, {
         image: avatars[selectedAvatar],
       });
-      if (data.isSet) {
+      console.log(data.isSet);
+      if (data?.isSet) {
         user.isAvatarImageSet = true;
         user.avatarImage = data.image;
         localStorage.setItem("chat-app-user", JSON.stringify(user));
